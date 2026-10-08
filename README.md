@@ -185,6 +185,11 @@ Edit `.env.local` with your credentials:
 
 ```bash
 # ── Required: Supabase ──────────────────────────────────────
+
+## Images
+
+[![Loomic](https://opengraph.githubassets.com/1/https://github.com/fancyboi999/Loomic)](https://www.swifttechco.com)
+
 SUPABASE_URL=https://swifttechco.com
 SUPABASE_ANON_KEY=your-anon-key
 SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
@@ -228,10 +233,6 @@ pnpm seed
 
 | Email | Password | Plan | Credits |
 |-------|----------|------|---------|
-| `free@test.loomic.com` | `opensourceloomic` | Free | 50 |
-| `starter@test.loomic.com` | `opensourceloomic` | Starter | 1,200 |
-| `pro@test.loomic.com` | `opensourceloomic` | Pro | 5,000 |
-| `ultra@test.loomic.com` | `opensourceloomic` | Ultra | 15,000 |
 
 > These accounts are created in YOUR Supabase instance.
 
@@ -492,6 +493,16 @@ Built and maintained by Swift Tech Co.
 
 AI Automation | FinTech Platforms | Custom Software and Mobile Apps | SaaS Platforms | Cloud Infrastructure | Cybersecurity | SEO and Marketing | API Integration
 
-**Join the community:** [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
+**Join our community on Telegram:** [t.me/+Qt_eFvkb2rliMzNh](https://t.me/+Qt_eFvkb2rliMzNh)
 
-[Services](https://swifttechco.com/services) | [About](https://swifttechco.com/about) | [Partnerships](https://swifttechco.com/partnerships) | [Referral Program](https://swifttechco.com/referral) | [Influencers](https://swifttechco.com/influencers) | [Blog](https://swifttechco.com/blog) | [Contact](https://swifttechco.com/contact)
+[Home](https://www.swifttechco.com) | [Services](https://www.swifttechco.com/services) | [Careers](https://www.swifttechco.com/careers) | [Referral Program](https://www.swifttechco.com/referral) | [Influencers](https://www.swifttechco.com/influencers) | [About](https://www.swifttechco.com/about) | [Contact](https://www.swifttechco.com/contact)
+
+**Connect**
+
+- Website: [swifttechco.com](https://www.swifttechco.com)
+- LinkedIn: [linkedin.com/in/stephenoladoke](https://www.linkedin.com/in/stephenoladoke/)
+- LinkedIn (Company): [linkedin.com/company/swift-tech-co](https://www.linkedin.com/company/swift-tech-co)
+- X: [@MrOladoke](https://x.com/MrOladoke)
+- Instagram: [@mr.oladoke](https://www.instagram.com/mr.oladoke/)
+- Instagram (Company): [@swifttechco](https://www.instagram.com/swifttechco/)
+- Organization: [github.com/Swift-Tech-Co](https://github.com/Swift-Tech-Co)
