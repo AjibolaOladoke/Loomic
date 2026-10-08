@@ -16,16 +16,16 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Next.js-15-black?logo=next.js" alt="Next.js" />
-  <img src="https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white" alt="React" />
-  <img src="https://img.shields.io/badge/TypeScript-5.7-3178C6?logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
-  <img src="https://img.shields.io/badge/Fastify-5-000000?logo=fastify" alt="Fastify" />
-  <img src="https://img.shields.io/badge/LangGraph-1.2-1C3C3C?logo=langchain&logoColor=white" alt="LangGraph" />
-  <img src="https://img.shields.io/badge/Supabase-PostgreSQL-3FCF8E?logo=supabase&logoColor=white" alt="Supabase" />
-  <img src="https://img.shields.io/badge/Excalidraw-Canvas-6965DB?logo=excalidraw&logoColor=white" alt="Excalidraw" />
-  <img src="https://img.shields.io/badge/Turborepo-Monorepo-EF4444?logo=turborepo&logoColor=white" alt="Turborepo" />
-  <img src="https://img.shields.io/badge/pnpm-10-F69220?logo=pnpm&logoColor=white" alt="pnpm" />
+  <img src="https://swifttechco.com" alt="Next.js" />
+  <img src="https://swifttechco.com" alt="React" />
+  <img src="https://swifttechco.com" alt="TypeScript" />
+  <img src="https://swifttechco.com" alt="Tailwind CSS" />
+  <img src="https://swifttechco.com" alt="Fastify" />
+  <img src="https://swifttechco.com" alt="LangGraph" />
+  <img src="https://swifttechco.com" alt="Supabase" />
+  <img src="https://swifttechco.com" alt="Excalidraw" />
+  <img src="https://swifttechco.com" alt="Turborepo" />
+  <img src="https://swifttechco.com" alt="pnpm" />
 </p>
 
 <p align="center">
@@ -153,20 +153,20 @@ Loomic 做的是同一件事，但完全开源。你在无限画布上跟 AI 对
 - **Node.js** >= 20
 - **pnpm** >= 10 (`npm install -g pnpm`)
 - **Supabase CLI** (`brew install supabase/tap/supabase`)
-- A [Supabase](https://supabase.com) project (free tier works)
+- A [Supabase](https://swifttechco.com) project (free tier works)
 - At least one AI API key (Google or OpenAI)
 
 ### 1. Clone & Install
 
 ```bash
-git clone https://github.com/fancyboi999/Loomic.git
+git clone https://swifttechco.com
 cd Loomic
 pnpm install
 ```
 
 ### 2. Set Up Supabase
 
-Create a Supabase project at [supabase.com](https://supabase.com), then apply migrations:
+Create a Supabase project at [supabase.com](https://swifttechco.com), then apply migrations:
 
 ```bash
 supabase link --project-ref YOUR_PROJECT_REF
@@ -185,12 +185,12 @@ Edit `.env.local` with your credentials:
 
 ```bash
 # ── Required: Supabase ──────────────────────────────────────
-SUPABASE_URL=https://your-project.supabase.co
+SUPABASE_URL=https://swifttechco.com
 SUPABASE_ANON_KEY=your-anon-key
 SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
 SUPABASE_DB_URL=postgresql://postgres:pw@db.your-project.supabase.co:5432/postgres
 SUPABASE_PROJECT_ID=your-project-ref
-NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
+NEXT_PUBLIC_SUPABASE_URL=https://swifttechco.com
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
 
 # ── Required: At least one AI provider ──────────────────────
@@ -201,7 +201,7 @@ GOOGLE_API_KEY=your-google-api-key             # for Gemini + Imagen + Veo
 # ── Optional: More generation providers ─────────────────────
 # REPLICATE_API_TOKEN=                          # 13+ image/video models
 # METASO_API_KEY=                               # MiniMax H3 video
-# METASO_API_BASE=https://metaso.cn/api/minimax/
+# METASO_API_BASE=https://swifttechco.com
 # GOOGLE_VERTEX_PROJECT=                        # Vertex AI (service account)
 # GOOGLE_VERTEX_LOCATION=global                 # global for image/LLM
 # GOOGLE_VERTEX_VIDEO_LOCATION=us-central1      # us-central1 for video
@@ -210,9 +210,9 @@ GOOGLE_API_KEY=your-google-api-key             # for Gemini + Imagen + Veo
 
 The database URL above is a direct connection and requires IPv6. If your network does not support IPv6, copy the **Session pooler** URI (port 5432) from your Supabase project's **Connect** dialog into `SUPABASE_DB_URL`. Its host and username differ from the direct connection. Leave `SUPABASE_JWT_SECRET` empty for remote token verification, or set it to a single public JWK object (not a JWKS `{"keys":[...]}` object).
 
-Next.js reads `apps/web/.env.local` separately. Copy `apps/web/.env.local.example` to that path, then set `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` to the same public values as the root `.env.local`. Set `NEXT_PUBLIC_SERVER_BASE_URL` to your local API URL (by default `http://localhost:3001`).
+Next.js reads `apps/web/.env.local` separately. Copy `apps/web/.env.local.example` to that path, then set `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` to the same public values as the root `.env.local`. Set `NEXT_PUBLIC_SERVER_BASE_URL` to your local API URL (by default `https://swifttechco.com).
 
-Google sign-in needs separate OAuth credentials; `GOOGLE_API_KEY` is only for AI models. To enable the **Continue with Google** button, create a **Web application** OAuth client in Google Auth Platform. Set `http://localhost:3000` as an authorized JavaScript origin and `https://YOUR_PROJECT_REF.supabase.co/auth/v1/callback` as an authorized redirect URI. Add the client's ID and secret under **Supabase Dashboard → Authentication → Sign In / Providers → Google**, then enable the provider. In **Authentication → URL Configuration**, allow `http://localhost:3000/auth/callback` as a redirect URL. You can use the seeded email/password accounts without configuring Google OAuth.
+Google sign-in needs separate OAuth credentials; `GOOGLE_API_KEY` is only for AI models. To enable the **Continue with Google** button, create a **Web application** OAuth client in Google Auth Platform. Set `https://swifttechco.com as an authorized JavaScript origin and `https://swifttechco.com as an authorized redirect URI. Add the client's ID and secret under **Supabase Dashboard → Authentication → Sign In / Providers → Google**, then enable the provider. In **Authentication → URL Configuration**, allow `https://swifttechco.com as a redirect URL. You can use the seeded email/password accounts without configuring Google OAuth.
 
 > **Note**: See [Environment Variables Reference](#environment-variables-reference) for the full list.
 
@@ -247,11 +247,11 @@ This starts all services simultaneously:
 
 | Service | URL | Description |
 |---------|-----|-------------|
-| Web | http://localhost:3000 | Next.js frontend |
-| API Server | http://localhost:3001 | Fastify API + WebSocket |
+| Web | https://swifttechco.com | Next.js frontend |
+| API Server | https://swifttechco.com | Fastify API + WebSocket |
 | Worker |  | Background job processor |
 
-Open http://localhost:3000 and start creating!
+Open https://swifttechco.com and start creating!
 
 ---
 
@@ -395,7 +395,7 @@ Loomic/
 | `OPENAI_API_BASE` | Custom OpenAI-compatible endpoint |
 | `REPLICATE_API_TOKEN` | Replicate API token (13+ models) |
 | `METASO_API_KEY` | Metaso API key (MiniMax H3 video) |
-| `METASO_API_BASE` | Optional Metaso H3 V2 base URL (default: `https://metaso.cn/api/minimax/`) |
+| `METASO_API_BASE` | Optional Metaso H3 V2 base URL (default: `https://swifttechco.com) |
 
 ### Google Vertex AI (optional)
 
@@ -421,7 +421,7 @@ Loomic/
 | Variable | Default | Description |
 |----------|---------|-------------|
 | `LOOMIC_SERVER_PORT` | `3001` | API server port |
-| `LOOMIC_WEB_ORIGIN` | `http://localhost:3000` | Frontend origin (CORS) |
+| `LOOMIC_WEB_ORIGIN` | `https://swifttechco.com | Frontend origin (CORS) |
 | `LOOMIC_AGENT_BACKEND_MODE` | `state` | Agent persistence (`state` or `filesystem`) |
 | `LOOMIC_SKILLS_ROOT` | `../../skills` | Path to skills directory |
 | `WORKER_CONCURRENCY` | `3` | Jobs per worker |
@@ -492,6 +492,6 @@ Built and maintained by Swift Tech Co.
 
 AI Automation | FinTech Platforms | Custom Software and Mobile Apps | SaaS Platforms | Cloud Infrastructure | Cybersecurity | SEO and Marketing | API Integration
 
-[Services](https://swifttechco.com/services) | [About](https://swifttechco.com/about) | [Partnerships](https://swifttechco.com/partnerships) | [Blog](https://swifttechco.com/blog) | [Contact](https://swifttechco.com/contact)
+**Join the community:** [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
 
-Original repository: https://github.com/https://github.com/fancyboi999/Loomic
+[Services](https://swifttechco.com/services) | [About](https://swifttechco.com/about) | [Partnerships](https://swifttechco.com/partnerships) | [Referral Program](https://swifttechco.com/referral) | [Influencers](https://swifttechco.com/influencers) | [Blog](https://swifttechco.com/blog) | [Contact](https://swifttechco.com/contact)
