@@ -16,16 +16,16 @@
 </p>
 
 <p align="center">
-  <img src="https://swifttechco.com" alt="Next.js" />
-  <img src="https://swifttechco.com" alt="React" />
-  <img src="https://swifttechco.com" alt="TypeScript" />
-  <img src="https://swifttechco.com" alt="Tailwind CSS" />
-  <img src="https://swifttechco.com" alt="Fastify" />
-  <img src="https://swifttechco.com" alt="LangGraph" />
-  <img src="https://swifttechco.com" alt="Supabase" />
-  <img src="https://swifttechco.com" alt="Excalidraw" />
-  <img src="https://swifttechco.com" alt="Turborepo" />
-  <img src="https://swifttechco.com" alt="pnpm" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 </p>
 
 <p align="center">
@@ -188,7 +188,7 @@ Edit `.env.local` with your credentials:
 
 ## Images
 
-[![Loomic](https://opengraph.githubassets.com/1/https://github.com/fancyboi999/Loomic)](https://www.swifttechco.com)
+[![Loomic](https://opengraph.githubassets.com/1/fancyboi999/Loomic)](https://www.swifttechco.com)
 
 SUPABASE_URL=https://swifttechco.com
 SUPABASE_ANON_KEY=your-anon-key
