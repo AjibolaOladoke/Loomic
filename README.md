@@ -1,38 +1,12 @@
-<p align="center">
-  <img src="apps/web/public/logo.svg" alt="Loomic Logo" width="80" />
-</p>
+# Loomic
 
-<h1 align="center">
-  Loomic
-</h1>
+## What This Is
 
-<p align="center">
-  Open-source alternative to <b>Lovart</b> / <b>CapCut Video Studio</b> / <b>Canva AI</b><br/>
-  Canvas-based AI creative workspace  no timeline, no templates, just talk.
-</p>
+This is part of the Swift Tech Co. working stack for product and engineering. It gathers the Loomic notes, examples and fixes that keep delivery fast, and doubles as the reference map we hand to whoever picks up this thread next.
 
-<p align="center">
-  <img width="900" src="docs/images/base-image.png" alt="Loomic" />
-</p>
+## Images
 
-<p align="center">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-</p>
-
-<p align="center">
-  <img width="900" src="docs/images/home-image.png" alt="Loomic Workspace" />
-</p>
-
----
+[![Loomic](images/preview.png)](https://github.com/Swift-Tech-Co)
 
 ## 💡 Loomic 是什么
 
@@ -153,7 +127,7 @@ Loomic 做的是同一件事，但完全开源。你在无限画布上跟 AI 对
 - **Node.js** >= 20
 - **pnpm** >= 10 (`npm install -g pnpm`)
 - **Supabase CLI** (`brew install supabase/tap/supabase`)
-- A [Supabase](https://swifttechco.com) project (free tier works)
+- A Supabase project (free tier works)
 - At least one AI API key (Google or OpenAI)
 
 ### 1. Clone & Install
@@ -166,7 +140,7 @@ pnpm install
 
 ### 2. Set Up Supabase
 
-Create a Supabase project at [supabase.com](https://swifttechco.com), then apply migrations:
+Create a Supabase project at supabase.com, then apply migrations:
 
 ```bash
 supabase link --project-ref YOUR_PROJECT_REF
@@ -184,77 +158,8 @@ cp .env.example .env.local
 Edit `.env.local` with your credentials:
 
 ```bash
-# ── Required: Supabase ──────────────────────────────────────
 
-## Images
 
-[![Loomic](https://opengraph.githubassets.com/1/fancyboi999/Loomic)](https://www.swifttechco.com)
-
-SUPABASE_URL=https://swifttechco.com
-SUPABASE_ANON_KEY=your-anon-key
-SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
-SUPABASE_DB_URL=postgresql://postgres:pw@db.your-project.supabase.co:5432/postgres
-SUPABASE_PROJECT_ID=your-project-ref
-NEXT_PUBLIC_SUPABASE_URL=https://swifttechco.com
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
-
-# ── Required: At least one AI provider ──────────────────────
-LOOMIC_AGENT_MODEL=google:gemini-2.5-flash     # or openai:gpt-4o
-GOOGLE_API_KEY=your-google-api-key             # for Gemini + Imagen + Veo
-# OPENAI_API_KEY=your-openai-key               # alternative: OpenAI provider
-
-# ── Optional: More generation providers ─────────────────────
-# REPLICATE_API_TOKEN=                          # 13+ image/video models
-# METASO_API_KEY=                               # MiniMax H3 video
-# METASO_API_BASE=https://swifttechco.com
-# GOOGLE_VERTEX_PROJECT=                        # Vertex AI (service account)
-# GOOGLE_VERTEX_LOCATION=global                 # global for image/LLM
-# GOOGLE_VERTEX_VIDEO_LOCATION=us-central1      # us-central1 for video
-# GOOGLE_APPLICATION_CREDENTIALS=               # path to SA JSON
-```
-
-The database URL above is a direct connection and requires IPv6. If your network does not support IPv6, copy the **Session pooler** URI (port 5432) from your Supabase project's **Connect** dialog into `SUPABASE_DB_URL`. Its host and username differ from the direct connection. Leave `SUPABASE_JWT_SECRET` empty for remote token verification, or set it to a single public JWK object (not a JWKS `{"keys":[...]}` object).
-
-Next.js reads `apps/web/.env.local` separately. Copy `apps/web/.env.local.example` to that path, then set `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` to the same public values as the root `.env.local`. Set `NEXT_PUBLIC_SERVER_BASE_URL` to your local API URL (by default `https://swifttechco.com).
-
-Google sign-in needs separate OAuth credentials; `GOOGLE_API_KEY` is only for AI models. To enable the **Continue with Google** button, create a **Web application** OAuth client in Google Auth Platform. Set `https://swifttechco.com as an authorized JavaScript origin and `https://swifttechco.com as an authorized redirect URI. Add the client's ID and secret under **Supabase Dashboard → Authentication → Sign In / Providers → Google**, then enable the provider. In **Authentication → URL Configuration**, allow `https://swifttechco.com as a redirect URL. You can use the seeded email/password accounts without configuring Google OAuth.
-
-> **Note**: See [Environment Variables Reference](#environment-variables-reference) for the full list.
-
-### 4. Seed Test Accounts (optional)
-
-自部署后，跑一下种子脚本就能直接体验各套餐功能，不需要接支付：
-
-```bash
-pnpm seed
-```
-
-脚本会在**你自己的 Supabase** 中创建 4 个测试账号：
-
-| Email | Password | Plan | Credits |
-|-------|----------|------|---------|
-
-> These accounts are created in YOUR Supabase instance.
-
-Use **password sign-in** on `/login` for these accounts. The login-link option only works for an email account that already exists; use `/register` to create a new account.
-
-### 5. Start Development
-
-```bash
-pnpm dev
-```
-
-This starts all services simultaneously:
-
-| Service | URL | Description |
-|---------|-----|-------------|
-| Web | https://swifttechco.com | Next.js frontend |
-| API Server | https://swifttechco.com | Fastify API + WebSocket |
-| Worker |  | Background job processor |
-
-Open https://swifttechco.com and start creating!
-
----
 
 ## ☁️ Deployment
 
@@ -495,14 +400,22 @@ AI Automation | FinTech Platforms | Custom Software and Mobile Apps | SaaS Platf
 
 **Join our community on Telegram:** [t.me/+Qt_eFvkb2rliMzNh](https://t.me/+Qt_eFvkb2rliMzNh)
 
-[Home](https://www.swifttechco.com) | [Services](https://www.swifttechco.com/services) | [Careers](https://www.swifttechco.com/careers) | [Referral Program](https://www.swifttechco.com/referral) | [Influencers](https://www.swifttechco.com/influencers) | [About](https://www.swifttechco.com/about) | [Contact](https://www.swifttechco.com/contact)
+Home | Services | Careers | Referral Program | Influencers | About | Contact
 
 **Connect**
 
-- Website: [swifttechco.com](https://www.swifttechco.com)
+- Website: swifttechco.com
 - LinkedIn: [linkedin.com/in/stephenoladoke](https://www.linkedin.com/in/stephenoladoke/)
 - LinkedIn (Company): [linkedin.com/company/swift-tech-co](https://www.linkedin.com/company/swift-tech-co)
 - X: [@MrOladoke](https://x.com/MrOladoke)
 - Instagram: [@mr.oladoke](https://www.instagram.com/mr.oladoke/)
 - Instagram (Company): [@swifttechco](https://www.instagram.com/swifttechco/)
 - Organization: [github.com/Swift-Tech-Co](https://github.com/Swift-Tech-Co)
+
+## Sources
+
+Compiled and maintained from upstream [fancyboi999/Loomic](https://github.com/fancyboi999/Loomic) under permissive open-source license.
+
+---
+
+Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
