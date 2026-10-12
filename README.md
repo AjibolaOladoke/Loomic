@@ -6,7 +6,7 @@ This is part of the Swift Tech Co. working stack for product and engineering. It
 
 ## Images
 
-[![Loomic](images/preview.png)](https://github.com/Swift-Tech-Co)
+[![Loomic](images/preview.png)](https://github.com/Swift-Tech-Co/Loomic)
 
 ## 💡 Loomic 是什么
 
@@ -133,7 +133,7 @@ Loomic 做的是同一件事，但完全开源。你在无限画布上跟 AI 对
 ### 1. Clone & Install
 
 ```bash
-git clone https://swifttechco.com
+git clone https://github.com/Swift-Tech-Co/Loomic
 cd Loomic
 pnpm install
 ```
@@ -158,8 +158,6 @@ cp .env.example .env.local
 Edit `.env.local` with your credentials:
 
 ```bash
-
-
 
 ## ☁️ Deployment
 
@@ -301,7 +299,7 @@ Loomic/
 | `OPENAI_API_BASE` | Custom OpenAI-compatible endpoint |
 | `REPLICATE_API_TOKEN` | Replicate API token (13+ models) |
 | `METASO_API_KEY` | Metaso API key (MiniMax H3 video) |
-| `METASO_API_BASE` | Optional Metaso H3 V2 base URL (default: `https://swifttechco.com) |
+| `METASO_API_BASE` | Optional Metaso H3 V2 base URL (default: `https://github.com/Swift-Tech-Co/Loomic) |
 
 ### Google Vertex AI (optional)
 
@@ -327,7 +325,7 @@ Loomic/
 | Variable | Default | Description |
 |----------|---------|-------------|
 | `LOOMIC_SERVER_PORT` | `3001` | API server port |
-| `LOOMIC_WEB_ORIGIN` | `https://swifttechco.com | Frontend origin (CORS) |
+| `LOOMIC_WEB_ORIGIN` | `https://github.com/Swift-Tech-Co/Loomic | Frontend origin (CORS) |
 | `LOOMIC_AGENT_BACKEND_MODE` | `state` | Agent persistence (`state` or `filesystem`) |
 | `LOOMIC_SKILLS_ROOT` | `../../skills` | Path to skills directory |
 | `WORKER_CONCURRENCY` | `3` | Jobs per worker |
@@ -404,13 +402,21 @@ Home | Services | Careers | Referral Program | Influencers | About | Contact
 
 **Connect**
 
-- Website: swifttechco.com
+- Website: https://github.com/Swift-Tech-Co/Loomic
 - LinkedIn: [linkedin.com/in/stephenoladoke](https://www.linkedin.com/in/stephenoladoke/)
 - LinkedIn (Company): [linkedin.com/company/swift-tech-co](https://www.linkedin.com/company/swift-tech-co)
 - X: [@MrOladoke](https://x.com/MrOladoke)
 - Instagram: [@mr.oladoke](https://www.instagram.com/mr.oladoke/)
 - Instagram (Company): [@swifttechco](https://www.instagram.com/swifttechco/)
 - Organization: [github.com/Swift-Tech-Co](https://github.com/Swift-Tech-Co)
+
+## Sources
+
+Compiled and maintained from upstream [fancyboi999/Loomic](https://github.com/fancyboi999/Loomic) under permissive open-source license.
+
+---
+
+Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
 
 ## Sources
 
